@@ -41,6 +41,14 @@ const StickyBottomContainer = styled.div`
   margin: 0;
 `;
 
+const UICommands = [
+  "role_assigner_on",
+  "role_assigner_off",
+  "pass_demo",
+  "penalty_demo",
+  "ball_handling_demo"
+];
+
 /**
  * Main component that combines all other components
  * Author: B. Afonins
@@ -132,7 +140,9 @@ class App extends Component {
 
         return { turtles };
       });
-    if (data.command !== undefined) this.setState({ command: data.command });
+    if (data.command !== undefined && UICommands.includes(data.command)) {
+      this.setState({ command: data.command });
+    }
   }
 
   onConnectionOpen(event) {
@@ -209,7 +219,11 @@ class App extends Component {
                   onTurtleEnableChange={id => this.onTurtleEnableChange(id)}
                 />
                 <ScrollableContent>
-                  <Settings turtles={turtles} session={this.state.session} />
+                  <Settings
+                    command={this.state.command}
+                    turtles={turtles}
+                    session={this.state.session}
+                  />
                 </ScrollableContent>
               </Fragment>
             )}
