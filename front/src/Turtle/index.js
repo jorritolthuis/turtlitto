@@ -33,7 +33,7 @@ const ROLE_DISPLAY_VALUES = {
   attacker_assist: "Att assist",
   defender_main: "Def main",
   defender_assist: "Def assist",
-  def_assist2: "Def assist 2",
+  defender_assist2: "Def assist 2",
   goalkeeper: "Goalkeeper"
 };
 
