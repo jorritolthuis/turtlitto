@@ -10,7 +10,7 @@ const COMMAND_VALUES = {
   "Role assigner on": "role_assigner_on",
   "Role assigner off": "role_assigner_off",
   "Pass demo": "pass_demo",
-  "Penalty mode": "penalty_demo",
+  "Penalty demo": "penalty_demo",
   "Ball Handling demo": "ball_handling_demo"
 };
 
@@ -19,8 +19,8 @@ const COMMAND_DISPLAY_VALUES = {
   role_assigner_on: "Role assigner on",
   role_assigner_off: "Role assigner off",
   pass_demo: "Pass demo",
-  penalty_mode: "Penalty Demo",
-  ball_handling_demo: "Ball Handling Demo"
+  penalty_demo: "Penalty demo",
+  ball_handling_demo: "Ball handling demo"
 };
 
 /**
